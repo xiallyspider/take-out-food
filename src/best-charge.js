@@ -30,12 +30,15 @@ function bestCharge(selectedItems) {
   
   // 选出最佳优惠方式
   var bestChargePrice = 0
-  if(promotionPrices.length > 0){
+  if (promotionPrices.length > 0) {
     let bestChargeItem = {}
-    for(let z = 0; z < promotionPrices.length; z++){
-      if(promotionPrices[z].price > bestChargePrice){
+    for (let z = 0; z < promotionPrices.length; z++) {
+      if (promotionPrices[z].price > bestChargePrice) {
         bestChargePrice = promotionPrices[z].price
         bestChargeItem = promotionPrices[z]
+      } else if(promotionPrices[z].price > bestChargePrice){
+        bestChargePrice = promotionPrices[0].price
+        bestChargeItem = promotionPrices[0]
       }
     }
   result += `-----------------------------------
