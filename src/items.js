@@ -1,4 +1,4 @@
-function loadAllItems() {
+ function loadAllItems() {
   return [{
     id: 'ITEM0001',
     name: '黄焖鸡',
@@ -21,3 +21,5 @@ function loadAllItems() {
     src: './img/ITEM0030.jpg'
   }];
 }
+
+module.exports = loadAllItems

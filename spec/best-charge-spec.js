@@ -1,3 +1,5 @@
+'use strict';
+var bestCharge = require('../src/best-charge.js');
 describe('Take out food', function () {
 
   it('should generate best charge when best is 指定菜品半价', function() {
@@ -44,5 +46,4 @@ describe('Take out food', function () {
 ===================================`.trim()
     expect(summary).toEqual(expected)
   });
-
 });
